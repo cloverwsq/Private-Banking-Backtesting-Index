@@ -1,0 +1,10 @@
+bucket,fund_name,identifier,appendix_source,note
+US Equity,JPMorgan America Equity Fund,LU0210528500,Appendix I,Use case Appendix I/II values manually validated from case PDF.
+Europe Equity,HSBC GIF Euroland Value Equity,LU1193295406,Appendix I,Use case Appendix I/II values manually validated from case PDF.
+Japan Equity,Pictet Japanese Equity Opportunities,LU0936264273,Appendix I,Use case Appendix I/II values manually validated from case PDF.
+Asia ex-Japan Equity,Schroder Asian Equity Yield,LU0188438112,Appendix I,Use case Appendix I/II values manually validated from case PDF.
+Global IG,HSBC Global IG Securitised Credit,LU1728044204,Appendix I,Use case Appendix I/II values manually validated from case PDF.
+Global HY,Schroder Global High Yield,LU0418832605,Appendix I,Use case Appendix I/II values manually validated from case PDF.
+EM Debt,Best match from Appendix I/II,N/A,Appendix I/II,Use case Appendix I/II values manually validated from case PDF.
+Private Markets,Private Markets/Private Credit representative,N/A,Appendix II,Use case Appendix I/II values manually validated from case PDF.
+Hedge Funds,Global Multi-Strategy Multi-PM,N/A,Appendix II,Use case Appendix I/II values manually validated from case PDF.

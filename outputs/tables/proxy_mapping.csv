@@ -1,0 +1,11 @@
+bucket,proxy,rationale,limitation
+us_equity,SPY,US large-cap beta proxy,fund-level style drift not captured
+europe_equity,VGK,Europe developed equity proxy,currency and factor mismatch
+japan_equity,EWJ,Japan equity beta proxy,active manager alpha not captured
+asia_ex_japan_equity,AIA,Asia ex-Japan equity proxy,regional composition mismatch
+global_ig,AGG,Global/US IG duration-credit blend,not exact securitised credit mix
+global_hy,HYG,Global HY beta proxy,issuer-quality mix differs from case fund
+em_debt,EMB,USD EM sovereign debt proxy,local debt/active selection not captured
+private_markets,BIZD,Listed private credit/BDC proxy,listed beta differs from private NAV smoothing
+hedge_funds,BTAL,Conservative alternative/risk-hedge proxy,not a true multi-PM hedge fund replication
+cash,BIL,Cash/T-bill proxy,cash account rates may differ

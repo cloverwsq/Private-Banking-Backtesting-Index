@@ -1,0 +1,3 @@
+portfolio,portfolio_income_yield,annual_income_usd,monthly_income_usd,income_gap_vs_25k_monthly,required_portfolio_yield_to_meet_target,shortfall_yield,source
+SAA,0.04365396439285757,3492317.1514286054,291026.42928571714,-266026.42928571714,0.00375,0,yfinance
+TAA,0.045111503939460035,3608920.315156803,300743.35959640023,-275743.35959640023,0.00375,0,yfinance

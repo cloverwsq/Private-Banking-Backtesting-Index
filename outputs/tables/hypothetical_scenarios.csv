@@ -1,0 +1,33 @@
+scenario,portfolio,impact_pct,impact_usd,scenario_portfolio
+Equity rally +10%,Current,0.07800000000000001,6240000.000000001,Equity rally +10% | Current
+Equity rally +10%,SAA,0.045000000000000005,3600000.0000000005,Equity rally +10% | SAA
+Equity rally +10%,TAA Static,0.047,3760000.0,Equity rally +10% | TAA Static
+Equity rally +10%,TAA Quarterly,0.047,3760000.0,Equity rally +10% | TAA Quarterly
+Equity rally +20%,Current,0.15600000000000003,12480000.000000002,Equity rally +20% | Current
+Equity rally +20%,SAA,0.09000000000000001,7200000.000000001,Equity rally +20% | SAA
+Equity rally +20%,TAA Static,0.094,7520000.0,Equity rally +20% | TAA Static
+Equity rally +20%,TAA Quarterly,0.094,7520000.0,Equity rally +20% | TAA Quarterly
+Equity selloff -10%,Current,-0.07800000000000001,-6240000.000000001,Equity selloff -10% | Current
+Equity selloff -10%,SAA,-0.045000000000000005,-3600000.0000000005,Equity selloff -10% | SAA
+Equity selloff -10%,TAA Static,-0.047,-3760000.0,Equity selloff -10% | TAA Static
+Equity selloff -10%,TAA Quarterly,-0.047,-3760000.0,Equity selloff -10% | TAA Quarterly
+Equity selloff -20%,Current,-0.15600000000000003,-12480000.000000002,Equity selloff -20% | Current
+Equity selloff -20%,SAA,-0.09000000000000001,-7200000.000000001,Equity selloff -20% | SAA
+Equity selloff -20%,TAA Static,-0.094,-7520000.0,Equity selloff -20% | TAA Static
+Equity selloff -20%,TAA Quarterly,-0.094,-7520000.0,Equity selloff -20% | TAA Quarterly
+Equity selloff -30%,Current,-0.23399999999999999,-18720000.0,Equity selloff -30% | Current
+Equity selloff -30%,SAA,-0.135,-10800000.0,Equity selloff -30% | SAA
+Equity selloff -30%,TAA Static,-0.14100000000000001,-11280000.000000002,Equity selloff -30% | TAA Static
+Equity selloff -30%,TAA Quarterly,-0.14100000000000001,-11280000.000000002,Equity selloff -30% | TAA Quarterly
+Rates up shock,Current,-0.07800000000000001,-6240000.000000001,Rates up shock | Current
+Rates up shock,SAA,-0.052500000000000005,-4200000.0,Rates up shock | SAA
+Rates up shock,TAA Static,-0.0555,-4440000.0,Rates up shock | TAA Static
+Rates up shock,TAA Quarterly,-0.0555,-4440000.0,Rates up shock | TAA Quarterly
+Credit spread shock,Current,-0.119,-9520000.0,Credit spread shock | Current
+Credit spread shock,SAA,-0.07250000000000001,-5800000.000000001,Credit spread shock | SAA
+Credit spread shock,TAA Static,-0.07350000000000001,-5880000.000000001,Credit spread shock | TAA Static
+Credit spread shock,TAA Quarterly,-0.07350000000000001,-5880000.000000001,Credit spread shock | TAA Quarterly
+Perfect storm,Current,-0.237,-18960000.0,Perfect storm | Current
+Perfect storm,SAA,-0.17800000000000002,-14240000.000000002,Perfect storm | SAA
+Perfect storm,TAA Static,-0.1812,-14496000.0,Perfect storm | TAA Static
+Perfect storm,TAA Quarterly,-0.1812,-14496000.0,Perfect storm | TAA Quarterly

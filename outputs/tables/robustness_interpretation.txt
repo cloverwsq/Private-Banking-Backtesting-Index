@@ -1,0 +1,1 @@
+Methodology robustness checks implemented: data integrity validation; transaction cost sensitivity; proxy beta stability analysis

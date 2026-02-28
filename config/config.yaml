@@ -1,0 +1,90 @@
+﻿capital_usd: 80000000
+income_requirement_monthly_usd: 25000
+start_date: "2017-01-01"
+end_date: null
+rolling_window_days: 252
+transaction_cost_bps: 10
+cash_rate_band:
+  low: 0.02
+  base: 0.035
+  high: 0.05
+cash_proxy_ticker: "BIL"
+rf_proxy_ticker: "BIL"
+use_rf_from_proxy: true
+yfinance_interval: "1d"
+yfinance_auto_adjust: true
+weights:
+  current:
+    us_equity: 0.60
+    europe_equity: 0.08
+    japan_equity: 0.05
+    asia_ex_japan_equity: 0.05
+    global_hy: 0.02
+    cash: 0.20
+  saa:
+    us_equity: 0.15
+    europe_equity: 0.10
+    japan_equity: 0.10
+    asia_ex_japan_equity: 0.10
+    global_ig: 0.15
+    global_hy: 0.05
+    em_debt: 0.10
+    private_markets: 0.12
+    hedge_funds: 0.08
+    cash: 0.05
+  taa_static:
+    us_equity: 0.13
+    europe_equity: 0.10
+    japan_equity: 0.12
+    asia_ex_japan_equity: 0.12
+    global_ig: 0.17
+    global_hy: 0.03
+    em_debt: 0.08
+    private_markets: 0.14
+    hedge_funds: 0.08
+    cash: 0.03
+rebalancing:
+  current: "monthly"
+  saa: "monthly"
+  taa_static: "none"
+  taa_quarterly: "quarterly"
+proxy_map:
+  us_equity: "SPY"
+  europe_equity: "VGK"
+  japan_equity: "EWJ"
+  asia_ex_japan_equity: "AIA"
+  global_ig: "AGG"
+  global_hy: "HYG"
+  em_debt: "EMB"
+  private_markets: "BIZD"
+  hedge_funds: "BTAL"
+  cash: "BIL"
+stress_windows:
+  covid: ["2020-02-15", "2020-04-30"]
+  rates_2022: ["2022-01-01", "2022-10-31"]
+  q4_2018: ["2018-10-01", "2018-12-31"]
+scenarios:
+  - name: "Equity rally +10%"
+    shocks: {equities: 0.10}
+  - name: "Equity rally +20%"
+    shocks: {equities: 0.20}
+  - name: "Equity selloff -10%"
+    shocks: {equities: -0.10}
+  - name: "Equity selloff -20%"
+    shocks: {equities: -0.20}
+  - name: "Equity selloff -30%"
+    shocks: {equities: -0.30}
+  - name: "Rates up shock"
+    shocks: {global_ig: -0.05, equities: -0.10}
+  - name: "Credit spread shock"
+    shocks: {global_hy: -0.10, equities: -0.15}
+  - name: "Perfect storm"
+    shocks:
+      equities: -0.30
+      global_hy: -0.15
+      global_ig: -0.05
+      em_debt: -0.12
+      alternatives: -0.08
+chart:
+  dpi: 250
+  style: "seaborn-v0_8-whitegrid"

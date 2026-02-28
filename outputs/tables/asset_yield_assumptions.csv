@@ -1,0 +1,11 @@
+bucket,proxy,trailing_12m_distribution_yield,yield_method,source
+us_equity,SPY,0.01061385749595614,sum(last12m_dividends)/latest_close,yfinance
+europe_equity,VGK,0.026494400005685877,sum(last12m_dividends)/latest_close,yfinance
+japan_equity,EWJ,0.039536644921612664,sum(last12m_dividends)/latest_close,yfinance
+asia_ex_japan_equity,AIA,0.020682935684047124,sum(last12m_dividends)/latest_close,yfinance
+global_ig,AGG,0.03832347082369847,sum(last12m_dividends)/latest_close,yfinance
+global_hy,HYG,0.0575445977422588,sum(last12m_dividends)/latest_close,yfinance
+em_debt,EMB,0.048777241750312485,sum(last12m_dividends)/latest_close,yfinance
+private_markets,BIZD,0.13186119556460227,sum(last12m_dividends)/latest_close,yfinance
+hedge_funds,BTAL,0.02542613650141053,sum(last12m_dividends)/latest_close,yfinance
+cash,BIL,0.040591572675310154,sum(last12m_dividends)/latest_close,yfinance

@@ -1,0 +1,1 @@
+pdf extraction skipped: No module named 'pdfplumber'
