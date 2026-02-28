@@ -3,10 +3,11 @@
 # SLIDE 1 — Education Objective Embedded Within Total Portfolio
 Title: Liability-Aligned Education Planning (Age 5 to University in ~13 Years)
 
-### LEFT PANEL — Education Planning
-- Timeline: Age 5 today → University starts in year 13.
-- Education objective is embedded in total portfolio now; no separate trust is set up today.
-- Funding logic: 4-year university schedule, inflation-adjusted nominal costs, discounted to present value.
+### LEFT PANEL — Education Funding Governance Framework (Liability-First)
+- Today (Age 5): keep education embedded within the total portfolio, while formalizing an Education Liability Schedule + PV framework and setting a glide path (strategy locked, structure not locked).
+- Trigger (Age ~9–12): when remaining horizon falls below ~8–10 years, progressively de-risk the education sleeve toward Global IG and cash-like assets for liability matching.
+- Optional legal structure (Age ~12+): if isolation, succession, or cross-border governance needs become binding, consider establishing an education trust and transferring the de-risked sleeve.
+- One-line conclusion: first make funding sufficiency auditable through liability matching; then decide whether trust structuring is necessary.
 
 Table caption: Education Liability Schedule (C0=240,000; inflation=5.0%; discount rate=3.5%; start in year 13)
 | Year | Projected Cost (Nominal) | Discount Factor | Present Value |
@@ -18,7 +19,7 @@ Table caption: Education Liability Schedule (C0=240,000; inflation=5.0%; discoun
 | Total | 1,950,572 | - | 1,182,870 |
 
 Coverage statement:
-- Under BASE case cash-flow capacity, annual portfolio income (SAA: 3,188,000; TAA: 3,240,800) materially exceeds average annual university cost (487,643); liability is covered.
+- Under BASE case cash-flow capacity, annual portfolio income (SAA: 3,188,000; TAA: 3,240,800) materially exceeds average annual university cost (487,643), indicating funded status under current assumptions.
 
 ### RIGHT PANEL — Portfolio Response
 - Glide-path framework (conceptual):
@@ -196,6 +197,13 @@ Table caption: Historical Validation Proxy Mapping (Not Used for Forward Assumpt
 | Cash | BIL |
 
 # SLIDE A5 — Backtest Metrics (Validation Only)
+Visual Placement:
+- outputs/charts/equity_curve.png (Top panel)
+- outputs/charts/drawdown.png (Second panel)
+- outputs/charts/rolling_12m_return.png (Bottom-left)
+- outputs/charts/monthly_return_hist.png (Bottom-middle)
+- outputs/charts/sharpe_distribution.png (Bottom-right)
+
 Table caption: Historical Validation Metrics (Proxy-Based)
 | portfolio | cagr | ann_vol | sharpe_rf0 | sharpe_rf_cash | sortino | max_drawdown | calmar | worst_month | best_month | %positive_months | tracking_error_vs_saa |
 |:--|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|
@@ -205,6 +213,9 @@ Table caption: Historical Validation Metrics (Proxy-Based)
 | TAA Quarterly | 0.0761082 | 0.101401 | 0.774394 | 0.557817 | 0.660098 | -0.232765 | 0.326974 | -0.109344 | 0.0870995 | 0.681818 | 0.00712258 |
 
 # SLIDE A6 — Stress Tests (Validation Only)
+Visual Placement:
+- outputs/charts/stress_bar.png (Figure A6.1 — Scenario Impact Ranking)
+
 Table caption: Historical Stress Windows
 | window | portfolio | cum_return | peak_to_trough_dd | recovery_days |
 |:--|:--|--:|--:|--:|
@@ -222,6 +233,9 @@ Table caption: Historical Stress Windows
 | q4_2018 | TAA Quarterly | -0.0741509 | -0.0958279 | nan |
 
 # SLIDE A7 — Data Coverage
+Visual Placement:
+- No chart (table-only)
+
 Table caption: Live Validation Data Coverage (yfinance)
 | ticker | start_date | end_date | coverage_pct | missing_days_pct | source |
 |:--|:--|:--|--:|--:|:--|
@@ -237,6 +251,9 @@ Table caption: Live Validation Data Coverage (yfinance)
 | VGK | 2017-01-03 | 2026-02-27 | 96.3165 | 3.68355 | yfinance |
 
 # SLIDE A8 — Transaction Cost Sensitivity
+Visual Placement:
+- No chart (table-only)
+
 Table caption: Turnover Cost Sensitivity (Validation Only)
 | tc_bps | portfolio | cagr | sharpe_rf_cash | max_drawdown |
 |--:|:--|--:|--:|--:|
@@ -256,3 +273,69 @@ Table caption: Turnover Cost Sensitivity (Validation Only)
 Disclosure:
 Historical data used solely for robustness validation. Forward-looking assumptions derived exclusively from case inputs.
 
+
+
+# SLIDE A9 — Portfolio Backtesting & Downside Risk Analysis
+Title: Portfolio Backtesting & Downside Risk Analysis
+
+### Top Left — Risk Matrix (Portfolio-Specific)
+| Risk Category | Portfolio-Specific Manifestation | Current Control |
+|:--|:--|:--|
+| Equity beta drawdown | Equity sleeve can drive short-term mark-to-market losses | Diversified regional equity + alternatives |
+| Credit spread widening | HY/EM debt spread shock can reduce near-term valuation | IG anchor + limited HY weight |
+| Liquidity mismatch | Private markets are less liquid than public sleeves | Cash + listed liquid sleeves for near-term needs |
+| Sequence risk (education horizon) | Adverse window before liability dates | Glide-path trigger (8–10y to liability) |
+| Tactical drift risk | Overlay can add unintended risk | ±2% tactical bands and periodic rebalance |
+
+
+### Top Right — Monte Carlo Distribution (BASE: mu=9.6%, sigma=8.6%, horizon=13y, AUM=80m)
+Visual Placement:
+- outputs/charts/monte_carlo_terminal_wealth.png (Figure A9.1 — Terminal Wealth Distribution, USD mn)
+
+Table caption: Terminal Wealth Percentiles (USD mn)
+| percentile   |   terminal_wealth_usd_mn |
+|:-------------|-------------------------:|
+| p1           |                   130.44 |
+| p5           |                   159.59 |
+| p10          |                   178.02 |
+| p25          |                   215.01 |
+| p50          |                   265.78 |
+| p75          |                   326.78 |
+| p90          |                   395.14 |
+| p95          |                   440.89 |
+| p99          |                   548.24 |
+
+Funding probability statement:
+- Education PV liability reference: USD 1.18mn.
+- Probability of terminal wealth >= education PV: 100.00%.
+
+### Bottom Left — Historical VaR Summary (95%)
+Table caption: 1-day and 10-day Historical VaR
+| portfolio     | VaR_1d_95   | VaR_10d_95   |
+|:--------------|:------------|:-------------|
+| SAA           | 0.86%       | 2.42%        |
+| TAA Static    | 0.90%       | 2.58%        |
+| TAA Quarterly | 0.91%       | 2.64%        |
+| Current       | 1.25%       | 3.66%        |
+
+### Bottom Right — Scenario Analysis (Historical Windows)
+Table caption: COVID / rates_2022 / q4_2018 outcomes
+| window     | portfolio     | cum_return   | peak_to_trough_dd   |
+|:-----------|:--------------|:-------------|:--------------------|
+| covid      | Current       | -10.70%      | -26.01%             |
+| covid      | SAA           | -10.36%      | -22.85%             |
+| covid      | TAA Static    | -10.85%      | -24.76%             |
+| covid      | TAA Quarterly | -10.47%      | -23.20%             |
+| rates_2022 | Current       | -16.16%      | -21.00%             |
+| rates_2022 | SAA           | -17.02%      | -20.07%             |
+| rates_2022 | TAA Static    | -17.43%      | -20.51%             |
+| rates_2022 | TAA Quarterly | -17.60%      | -20.74%             |
+| q4_2018    | Current       | -10.44%      | -14.45%             |
+| q4_2018    | SAA           | -6.76%       | -8.88%              |
+| q4_2018    | TAA Static    | -7.14%       | -9.33%              |
+| q4_2018    | TAA Quarterly | -7.42%       | -9.58%              |
+
+Narrative:
+- Volatility remains controlled relative to growth objective under the strategic design.
+- Education PV liability (1.18mn) is immaterial versus total AUM (80mn).
+- Tactical overlay improves opportunity set without materially increasing tail-risk profile.
