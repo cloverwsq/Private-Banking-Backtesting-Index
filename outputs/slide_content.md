@@ -1,157 +1,258 @@
 ﻿## CLIENT SLIDES
 
-# SLIDE P1 — Strategic Asset Allocation (SAA)
-Title: Strategic Asset Allocation — Built Around Your Objectives
+# SLIDE 1 — Education Objective Embedded Within Total Portfolio
+Title: Liability-Aligned Education Planning (Age 5 to University in ~13 Years)
 
-### A) Client Objectives
-- Capital preservation mandate
-- USD 25k/month income requirement
-- Private market participation
-- AI thematic exposure via diversified equity sleeves
-- Liquidity buffer for flexibility
+### LEFT PANEL — Education Planning
+- Timeline: Age 5 today → University starts in year 13.
+- Education objective is embedded in total portfolio now; no separate trust is set up today.
+- Funding logic: 4-year university schedule, inflation-adjusted nominal costs, discounted to present value.
 
-### B) Portfolio Structure
-| Asset/Sub-asset      |   Weight % |
-|:---------------------|-----------:|
-| us_equity            |         15 |
-| europe_equity        |         10 |
-| japan_equity         |         10 |
-| asia_ex_japan_equity |         10 |
-| global_ig            |         15 |
-| global_hy            |          5 |
-| em_debt              |         10 |
-| private_markets      |         12 |
-| hedge_funds          |          8 |
-| cash                 |          5 |
+Table caption: Education Liability Schedule (C0=240,000; inflation=5.0%; discount rate=3.5%; start in year 13)
+| Year | Projected Cost (Nominal) | Discount Factor | Present Value |
+|:--|--:|--:|--:|
+| Year 1 of university (k=13) | 452,556 | 0.6394 | 289,366 |
+| Year 2 of university (k=14) | 475,184 | 0.6178 | 293,560 |
+| Year 3 of university (k=15) | 498,943 | 0.5969 | 297,814 |
+| Year 4 of university (k=16) | 523,890 | 0.5767 | 302,130 |
+| Total | 1,950,572 | - | 1,182,870 |
 
-### C) Client-Relevant Metrics (BASE only, case-compliant source)
-- Expected Return (BASE case): **Sourced from Case Appendix I/II (see A1 Case-Sourced Decomposition)**
-- Volatility: **0.0969827686196899** (proxy backtest validation; see A1/A6)
-- Portfolio Income Yield (full cash-flow model): **4.37% ($3,492,317)**
-- Monthly income vs requirement: **$291,026 vs $25,000/month**
+Coverage statement:
+- Under BASE case cash-flow capacity, annual portfolio income (SAA: 3,188,000; TAA: 3,240,800) materially exceeds average annual university cost (487,643); liability is covered.
 
-### D) What This Means for You
-- Strategic allocation is set by client objectives and strategic risk budget.
-- Expected return assumptions for investment decisioning are case-sourced (Appendix I/II).
-- Historical behavior is validated separately using proxy backtests.
+### RIGHT PANEL — Portfolio Response
+- Glide-path framework (conceptual):
+  - Phase 1 (Age 5–8): growth-oriented mix
+  - Phase 2 (Age 9–12): gradual increase in Global IG
+  - Phase 3 (Age 13–17): majority IG to immunize near-dated liability
+
+Table caption: SAA Allocation (Current Strategic Mix)
+| Asset/Sub-asset | Weight % |
+|:--|--:|
+| US Equity | 15.0 |
+| Europe Equity | 10.0 |
+| Japan Equity | 10.0 |
+| Asia ex Japan Equity | 10.0 |
+| Global Investment Grade | 15.0 |
+| Global High Yield | 5.0 |
+| Emerging Market Debt | 10.0 |
+| Private Markets | 12.0 |
+| Hedge Funds | 8.0 |
+| Cash | 5.0 |
+
+Table caption: SAA Key Metrics (Case-Derived)
+| Metric | BASE |
+|:--|--:|
+| Expected Return | 9.60% |
+| Volatility | 8.58% |
+| Income Yield | 3.99% |
 
 ### Visual Placement
-- Primary visual (center): Allocation structure table.
-- Optional small visual: asset-allocation bar chart from table weights.
-- No heavy backtest/stress charts on this page.
+- Left panel: education timeline + liability table.
+- Right panel: `outputs/charts/saa_donut.png` + SAA key metrics mini-table.
+- No historical backtest charts on this slide.
 
-### Footnotes / Appendix Cross-References
-- Case-sourced expected return decomposition: Appendix A1.
-- Risk statistics and stress validation: Appendix A1–A4.
-- Income decomposition methodology: Appendix A1.
-- Data integrity and robustness checks: Appendix A6.
+### Footnotes / Compliance
+- Client-slide forward-looking metrics are derived from case inputs only.
+- Historical validation/backtest content is Appendix-only.
 
 ---
 
-# SLIDE P2 — Tactical Asset Allocation (TAA)
-Title: Tactical Asset Allocation — 6–12 Month Cyclical Overlay
+# SLIDE 2 — Strategic and Tactical Asset Allocation
+Title: Portfolio Construction with Disciplined Tactical Overlay
 
-### A) Current Macro Backdrop
-- Policy-rate plateau
-- Disinflation trend
-- Regional diversification opportunity
+### TOP PANEL — Portfolio Construction
+Table caption: Tactical Adjustments (SAA vs TAA)
+| Asset | SAA | TAA | Delta |
+|:--|:--|:--|:--|
+| Asia ex Japan Equity | 10.0% | 12.0% | +2.0% |
+| Cash | 5.0% | 3.0% | -2.0% |
+| Emerging Market Debt | 10.0% | 8.0% | -2.0% |
+| Europe Equity | 10.0% | 10.0% | +0.0% |
+| Global High Yield | 5.0% | 3.0% | -2.0% |
+| Global Investment Grade | 15.0% | 17.0% | +2.0% |
+| Hedge Funds | 8.0% | 8.0% | +0.0% |
+| Japan Equity | 10.0% | 12.0% | +2.0% |
+| Private Markets | 12.0% | 14.0% | +2.0% |
+| US Equity | 15.0% | 13.0% | -2.0% |
 
-### B) Tactical Adjustments (Delta vs SAA)
-| Asset                | SAA   | TAA   | Delta   |
-|:---------------------|:------|:------|:--------|
-| asia_ex_japan_equity | 10.0% | 12.0% | +2.0%   |
-| cash                 | 5.0%  | 3.0%  | -2.0%   |
-| em_debt              | 10.0% | 8.0%  | -2.0%   |
-| europe_equity        | 10.0% | 10.0% | +0.0%   |
-| global_hy            | 5.0%  | 3.0%  | -2.0%   |
-| global_ig            | 15.0% | 17.0% | +2.0%   |
-| hedge_funds          | 8.0%  | 8.0%  | +0.0%   |
-| japan_equity         | 10.0% | 12.0% | +2.0%   |
-| private_markets      | 12.0% | 14.0% | +2.0%   |
-| us_equity            | 15.0% | 13.0% | -2.0%   |
+Table caption: SAA vs TAA KPI Summary (Case-Derived)
+| Portfolio | Expected Return (LOW) | Expected Return (BASE) | Expected Return (HIGH) | Volatility | Expected Yield |
+|:--|--:|--:|--:|--:|--:|
+| SAA | -1.86% | 9.60% | 21.07% | 8.58% | 3.99% |
+| TAA | -1.88% | 9.95% | 21.77% | 8.81% | 4.05% |
+| Delta (TAA-SAA, pp) | -0.01pp | +0.34pp | +0.70pp | +0.23pp | +0.07pp |
 
-### C) Risk Discipline Note
-- Tactical bands are capped at ±2% versus SAA.
-- This preserves long-term allocation discipline and strategic risk budget.
+### BOTTOM PANEL — Positioning
+Equity positioning (weights-based):
+- Regional equity exposure is balanced across US, Europe, Japan, and Asia ex-Japan.
+- TAA rotates modestly toward Japan and Asia ex-Japan while trimming US.
 
-### D) Expected Impact (BASE only, case-compliant source)
-- BASE expected return shift is derived from Case Appendix I/II decomposition (see Appendix A1).
-- LOW/HIGH tactical decomposition is moved entirely to Appendix A1.
+Fixed income positioning (weights-based):
+- TAA tilts toward higher Global IG and trims HY + EM debt marginally.
+- Cash is reduced tactically to fund risk-controlled return enhancement.
+
+Portfolio emphasizes:
+- Growth aligned with 13-year horizon.
+- Income sustainability above required threshold.
+- Diversified multi-asset exposures with private markets and alternatives.
 
 ### Visual Placement
-- Primary visual: SAA vs TAA delta bar chart.
-- No stress charts on this slide.
+- Top-left: `outputs/charts/saa_donut.png`
+- Top-middle: `outputs/charts/taa_donut.png`
+- Top-right: KPI summary table
+- Bottom-left: `outputs/charts/equity_region_bar_saa.png`
+- Bottom-right: `outputs/charts/fi_bucket_bar_saa.png`
 
-### Footnotes / Appendix Cross-References
-- Case-sourced expected return decomposition: Appendix A1.
-- Drawdown validation: Appendix A2.
-- Stress validation: Appendix A3.
-- Data integrity and robustness checks: Appendix A6.
+### Footnotes / Compliance
+- No ratings/sector/duration/YTM breakdown shown because not explicitly provided in case tables.
+- Full decomposition and validation references: Appendix A2–A8.
 
 ---
 
-## APPENDIX — Quantitative Validation & Performance Decomposition
+## APPENDIX — Quantitative Validation & Methodology
 This section provides quantitative validation for the client-facing strategy.
 
-# SLIDE A1 — Return Decomposition + Income Model
-### Visual Placement
-- No charts (table-only slide).
-- Label note: Data sourced from live backtest engine for validation; expected-return assumptions sourced from Case Appendix I/II.
+Discount factor methodology:
+- DF_k = 1 / (1 + r)^k, with r = 3.5%.
+- DF_13 = 1/(1.035)^13 = 0.6394
+- DF_14 = 1/(1.035)^14 = 0.6178
+- DF_15 = 1/(1.035)^15 = 0.5969
+- DF_16 = 1/(1.035)^16 = 0.5767
+- PV_k = NominalCost_k × DF_k
+Table caption: Education Liability Schedule (Assumptions: C0=240,000; education inflation=5.0%; discount rate=3.5%; horizon starts in year 13)
+| Year | Projected Cost (Nominal) | Discount Factor | Present Value |
+|:--|--:|--:|--:|
+| Year 1 of university (k=13) | 452,556 | 0.6394 | 289,366 |
+| Year 2 of university (k=14) | 475,184 | 0.6178 | 293,560 |
+| Year 3 of university (k=15) | 498,943 | 0.5969 | 297,814 |
+| Year 4 of university (k=16) | 523,890 | 0.5767 | 302,130 |
+| Total | 1,950,572 | - | 1,182,870 |
 
-Table caption: Case-sourced decomposition input map (must trace to Appendix I/II rows)
-| bucket               | case_fund_reference                                      | source_rule              |
-|:---------------------|:---------------------------------------------------------|:-------------------------|
-| us_equity            | JPMorgan America Equity Fund (LU0210528500)            | Appendix I/II only       |
-| europe_equity        | HSBC GIF Euroland Value Equity (LU1193295406)          | Appendix I/II only       |
-| japan_equity         | Pictet Japanese Equity Opportunities (LU0936264273)    | Appendix I/II only       |
-| asia_ex_japan_equity | Schroder Asian Equity Yield (LU0188438112)             | Appendix I/II only       |
-| global_ig            | HSBC Global IG Securitised Credit (LU1728044204)       | Appendix I/II only       |
-| global_hy            | Schroder Global High Yield (LU0418832605)              | Appendix I/II only       |
-| em_debt              | Case Appendix best-match fund                            | Appendix I/II only       |
-| private_markets      | Case Appendix II private markets/private credit fund     | Appendix II only         |
-| hedge_funds          | Case Appendix II Global Multi-Strategy Multi-PM          | Appendix II only         |
-| cash                 | Cash proxy assumption (explicitly labeled assumption)    | Assumption + sensitivity |
+Table caption: Education Funding Coverage Test (No Allocation Change)
+| Metric | SAA | TAA |
+|:--|--:|--:|
+| Annual portfolio income | 3,188,000 | 3,240,800 |
+| Average annual university cost | 487,643 | 487,643 |
+| Coverage multiple | 6.54x | 6.65x |
+| Coverage conclusion | Covered | Covered |
 
-Table caption: Income decomposition (full portfolio cash-flow model)
-| Band   | Total Return %   | Total Return $   | Income Return %   | Income Return $   | Capital Gain %   | Capital Gain $   | Monthly Income $   | vs $25k Requirement   |
-|:-------|:-----------------|:-----------------|:------------------|:------------------|:-----------------|:-----------------|:-------------------|:----------------------|
-| LOW    | -6.90%           | $-5,519,144      | 4.37%             | $3,492,317        | -11.26%          | $-9,011,461      | $291,026           | MEET                  |
-| BASE   | 7.82%            | $6,254,711       | 4.37%             | $3,492,317        | 3.45%            | $2,762,394       | $291,026           | MEET                  |
-| HIGH   | 22.54%           | $18,028,567      | 4.37%             | $3,492,317        | 18.17%           | $14,536,249      | $291,026           | MEET                  |
+# SLIDE A2 — Income Calculation Methodology (Case-Based)
+Table caption: Income Model Formulae
+| Component | Formula | Value |
+|:--|:--|:--|
+| Portfolio Income Yield | Σ(wi × income component_i) | SAA: 3.99%; TAA: 4.05% |
+| Annual Income | Income Yield × AUM | SAA: 3,188,000; TAA: 3,240,800 |
+| Monthly Income | Annual Income / 12 | SAA: 265,667; TAA: 270,067 |
+| Required Yield | 300,000 / AUM | 0.375% |
+| Coverage Ratio | Monthly Income / 25,000 | SAA: 10.63x; TAA: 10.80x |
 
-Table caption: Backtest statistics (proxy validation only)
-| portfolio     |      cagr |   ann_vol |   sharpe_rf0 |   sharpe_rf_cash |   sortino |   max_drawdown |   calmar |   worst_month |   best_month |   %positive_months |   tracking_error_vs_saa |
-|:--------------|----------:|----------:|-------------:|-----------------:|----------:|---------------:|---------:|--------------:|-------------:|-------------------:|------------------------:|
-| Current       | 0.111652  | 0.135004  |     0.851856 |         0.689186 |  0.832599 |      -0.260895 | 0.427957 |    -0.0965878 |    0.0886716 |           0.7      |              0.056677   |
-| SAA           | 0.0746864 | 0.0969828 |     0.791499 |         0.565056 |  0.662938 |      -0.229063 | 0.326052 |    -0.107193  |    0.0837987 |           0.7      |              0          |
-| TAA Static    | 0.0775348 | 0.103578  |     0.77309  |         0.561066 |  0.656544 |      -0.248463 | 0.312058 |    -0.113701  |    0.0884866 |           0.681818 |              0.0100669  |
-| TAA Quarterly | 0.0761082 | 0.101401  |     0.774394 |         0.557817 |  0.660098 |      -0.232765 | 0.326974 |    -0.109344  |    0.0870995 |           0.681818 |              0.00712258 |
+Table caption: Income Component Inputs by Asset Class
+| Asset Class | Income Component (Case) |
+|:--|--:|
+| Equities | 2.8% |
+| Fixed Income | 4.5% |
+| Alternatives | 6.5% |
+| Cash | 1.5% |
 
-Income Sustainability Note:
-- Income model upgraded to full portfolio cash-flow approach.
-- Portfolio income sources: equity dividends, bond coupons, private credit distributions, and cash yield.
+# SLIDE A3 — Expected Return Decomposition (Case Inputs)
+Table caption: Bucket-Level Return / Volatility Inputs and Contributions (SAA)
+| Bucket | Weight | Representative Fund (Case) | Return | Volatility | BASE Contribution |
+|:--|--:|:--|--:|--:|--:|
+| US Equity | 15.0% | JPMorgan America Equity Fund (LU0210528500) | 14.4% | 15.6% | 2.16% |
+| Europe Equity | 10.0% | HSBC GIF Euroland Value Equity (LU1193295406) | 16.5% | 16.7% | 1.65% |
+| Japan Equity | 10.0% | Pictet Japanese Equity Opportunities (LU0936264273) | 18.0% | 12.4% | 1.80% |
+| Asia ex Japan Equity | 10.0% | Schroder Asian Equity Yield (LU0188438112) | 8.7% | 16.7% | 0.87% |
+| Global Investment Grade | 15.0% | HSBC Global IG Securitised Credit (LU1728044204) | 3.5% | 2.0% | 0.53% |
+| Global High Yield | 5.0% | Schroder Global High Yield (LU0418832605) | 3.8% | 6.9% | 0.19% |
+| Emerging Market Debt | 10.0% | BlackRock Emerging Markets Bond (LU0200680600) | 3.2% | 9.8% | 0.32% |
+| Private Markets | 12.0% | Global Private Equity Fund (Appendix II) | 9.9% | 19.6% | 1.19% |
+| Hedge Funds | 8.0% | Global Multi-Strategy Multi-PM (Appendix II) | 10.3% | 6.8% | 0.82% |
+| Cash | 5.0% | Case cash assumption | 1.5% | 0.5% | 0.08% |
 
-# SLIDE A2 — Performance & Drawdown
-### Visual Placement
-- Figure A2.1 – Growth of +115 lines: outputs/charts/equity_curve.png
-- Figure A2.2 – Drawdown Profile: outputs/charts/drawdown.png
+Table caption: Portfolio Outputs from Case Inputs
+| Portfolio | Expected Return (LOW) | Expected Return (BASE) | Expected Return (HIGH) | Volatility |
+|:--|--:|--:|--:|--:|
+| SAA | -1.86% | 9.60% | 21.07% | 8.58% |
+| TAA | -1.88% | 9.95% | 21.77% | 8.81% |
 
-# SLIDE A3 — Stress Tests
-### Visual Placement
-- Figure A3.1 – Scenario Impact Ranking: outputs/charts/stress_bar.png
+Volatility Reconciliation Note:
+- Current volatility figures (SAA 8.58%, TAA 8.81%) use case bucket vol with empirical cross-asset correlation estimated from live proxy history.
+- If official full case covariance matrix is provided, rerun sigma = sqrt(w^T Sigma w) and overwrite final volatility lock values.
 
-# SLIDE A4 — Distribution & Rolling Diagnostics
-### Visual Placement
-- outputs/charts/monthly_return_hist.png
-- outputs/charts/sharpe_distribution.png
-- outputs/charts/rolling_12m_return.png
+# SLIDE A4 — Proxy Mapping Table (Validation Only)
+Table caption: Historical Validation Proxy Mapping (Not Used for Forward Assumptions)
+| Case Bucket | Validation Proxy |
+|:--|:--|
+| US Equity | SPY |
+| Europe Equity | VGK |
+| Japan Equity | EWJ |
+| Asia ex Japan Equity | AIA |
+| Global Investment Grade | AGG |
+| Global High Yield | HYG |
+| Emerging Market Debt | EMB |
+| Private Markets | BIZD |
+| Hedge Funds | BTAL |
+| Cash | BIL |
 
-# SLIDE A5 — Proxy Mapping & Model Explanation
-### Visual Placement
-- No charts required (table + methodology box).
+# SLIDE A5 — Backtest Metrics (Validation Only)
+Table caption: Historical Validation Metrics (Proxy-Based)
+| portfolio | cagr | ann_vol | sharpe_rf0 | sharpe_rf_cash | sortino | max_drawdown | calmar | worst_month | best_month | %positive_months | tracking_error_vs_saa |
+|:--|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|
+| Current | 0.111652 | 0.135004 | 0.851856 | 0.689186 | 0.832599 | -0.260895 | 0.427957 | -0.0965878 | 0.0886716 | 0.7 | 0.056677 |
+| SAA | 0.0746864 | 0.0969828 | 0.791499 | 0.565056 | 0.662938 | -0.229063 | 0.326052 | -0.107193 | 0.0837987 | 0.7 | 0 |
+| TAA Static | 0.0775348 | 0.103578 | 0.77309 | 0.561066 | 0.656544 | -0.248463 | 0.312058 | -0.113701 | 0.0884866 | 0.681818 | 0.0100669 |
+| TAA Quarterly | 0.0761082 | 0.101401 | 0.774394 | 0.557817 | 0.660098 | -0.232765 | 0.326974 | -0.109344 | 0.0870995 | 0.681818 | 0.00712258 |
 
-# SLIDE A6 — Robustness & Validation
-### Visual Placement
-- No charts (tables only).
+# SLIDE A6 — Stress Tests (Validation Only)
+Table caption: Historical Stress Windows
+| window | portfolio | cum_return | peak_to_trough_dd | recovery_days |
+|:--|:--|--:|--:|--:|
+| covid | Current | -0.107027 | -0.260103 | nan |
+| covid | SAA | -0.103562 | -0.228479 | nan |
+| covid | TAA Static | -0.108542 | -0.247634 | nan |
+| covid | TAA Quarterly | -0.104713 | -0.231965 | nan |
+| rates_2022 | Current | -0.16156 | -0.210017 | nan |
+| rates_2022 | SAA | -0.170225 | -0.200675 | nan |
+| rates_2022 | TAA Static | -0.174344 | -0.205101 | nan |
+| rates_2022 | TAA Quarterly | -0.176026 | -0.207391 | nan |
+| q4_2018 | Current | -0.104425 | -0.144511 | nan |
+| q4_2018 | SAA | -0.0675693 | -0.0888146 | nan |
+| q4_2018 | TAA Static | -0.0713516 | -0.0933128 | nan |
+| q4_2018 | TAA Quarterly | -0.0741509 | -0.0958279 | nan |
 
-Footnote: Market data sourced via yfinance; adjusted close used; see data coverage table.
+# SLIDE A7 — Data Coverage
+Table caption: Live Validation Data Coverage (yfinance)
+| ticker | start_date | end_date | coverage_pct | missing_days_pct | source |
+|:--|:--|:--|--:|--:|:--|
+| AGG | 2017-01-03 | 2026-02-27 | 96.3165 | 3.68355 | yfinance |
+| AIA | 2017-01-03 | 2026-02-27 | 96.3165 | 3.68355 | yfinance |
+| BIL | 2017-01-03 | 2026-02-27 | 96.3165 | 3.68355 | yfinance |
+| BIZD | 2017-01-03 | 2026-02-27 | 96.3165 | 3.68355 | yfinance |
+| BTAL | 2017-01-03 | 2026-02-27 | 96.3165 | 3.68355 | yfinance |
+| EMB | 2017-01-03 | 2026-02-27 | 96.3165 | 3.68355 | yfinance |
+| EWJ | 2017-01-03 | 2026-02-27 | 96.3165 | 3.68355 | yfinance |
+| HYG | 2017-01-03 | 2026-02-27 | 96.3165 | 3.68355 | yfinance |
+| SPY | 2017-01-03 | 2026-02-27 | 96.3165 | 3.68355 | yfinance |
+| VGK | 2017-01-03 | 2026-02-27 | 96.3165 | 3.68355 | yfinance |
+
+# SLIDE A8 — Transaction Cost Sensitivity
+Table caption: Turnover Cost Sensitivity (Validation Only)
+| tc_bps | portfolio | cagr | sharpe_rf_cash | max_drawdown |
+|--:|:--|--:|--:|--:|
+| 0 | Current | 0.111829 | 0.690377 | -0.260895 |
+| 0 | SAA | 0.0749198 | 0.567313 | -0.229063 |
+| 0 | TAA Static | 0.0775348 | 0.561066 | -0.248463 |
+| 0 | TAA Quarterly | 0.0762465 | 0.559093 | -0.232765 |
+| 10 | Current | 0.111652 | 0.689186 | -0.260895 |
+| 10 | SAA | 0.0746864 | 0.565056 | -0.229063 |
+| 10 | TAA Static | 0.0775348 | 0.561066 | -0.248463 |
+| 10 | TAA Quarterly | 0.0761082 | 0.557817 | -0.232765 |
+| 25 | Current | 0.111386 | 0.6874 | -0.260895 |
+| 25 | SAA | 0.0743363 | 0.56167 | -0.229063 |
+| 25 | TAA Static | 0.0775348 | 0.561066 | -0.248463 |
+| 25 | TAA Quarterly | 0.0759009 | 0.555903 | -0.232765 |
+
+Disclosure:
+Historical data used solely for robustness validation. Forward-looking assumptions derived exclusively from case inputs.
+

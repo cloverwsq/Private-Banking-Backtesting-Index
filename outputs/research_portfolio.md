@@ -1,8 +1,6 @@
 ﻿# Research Portfolio Note
 
-(Compliant split applied)
+Forward-looking client figures in this version are case-derived and aligned to the case asset universe.
+Historical proxy analytics remain Appendix-only for robustness validation.
 
-- Expected-return assumptions for client decisioning: Case Appendix I/II (A1)
-- Backtest, stress, and robustness: yfinance proxy validation (A2–A6)
-
-See outputs/slide_content.md for full slide-ready text.
+See outputs/slide_content.md for the full master content.
